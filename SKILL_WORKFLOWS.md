@@ -1,204 +1,204 @@
-# PM Skill Suite 工作流总览
+﻿# PM Skill Suite 宸ヤ綔娴佹€昏
 
-> 包含 20 个 PM Skill，覆盖产品管理全生命周期。
-> 另有 10 条 Commands（技能链），串联多个 Skill 形成端到端工作流。
+> 鍖呭惈 20 涓?PM Skill锛岃鐩栦骇鍝佺鐞嗗叏鐢熷懡鍛ㄦ湡銆?
+> 鍙︽湁 10 鏉?Commands锛堟妧鑳介摼锛夛紝涓茶仈澶氫釜 Skill 褰㈡垚绔埌绔伐浣滄祦銆?
 
 ---
 
-## 一、Skill 协同地图
+## 涓€銆丼kill 鍗忓悓鍦板浘
 
 ```
-【需求发现阶段】━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-│
-├── identify-needs          ← 入口：将模糊想法转化为假设
-│   ├── -> user-prioritization     假设验证优先级
-│   │       └── -> interview-script     针对高风险假设设计访谈
-│   │               └── -> interview-summary   从访谈提炼洞察
-│   │                       └── -> identify-needs (循环: 新假设)
-│   │
-│   └── -> demand-prioritization-engine   高价值假设纳入需求池
-│
-【产品规划阶段】━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-│
-├── competitive-strategy    ← 入口：竞争格局与定位分析
-│   ├── -> strategy-canvas        竞争维度与 ERRC 行动
-│   │       └── -> value-proposition     差异化价值主张
-│   │
-│   └── -> identify-needs         发现新机会假设
-│
-├── demand-prioritization-engine   ← 入口：需求池优先级评分
-│   └── -> pm-roadmap-planner          路线图 + 里程碑
-│           └── -> user-story-mapping       用户任务流 / MVP 切片
-│                   ├── -> prd-writer            编写单个 PRD
-│                   └── -> iteration-planning    Sprint 任务拆解
-│
-└── value-proposition       ← 独立：产品定位与卖点提炼
-    └── -> prd-writer
+銆愰渶姹傚彂鐜伴樁娈点€戔攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹?
+鈹?
+鈹溾攢鈹€ 识别假设          鈫?鍏ュ彛锛氬皢妯＄硦鎯虫硶杞寲涓哄亣璁?
+鈹?  鈹溾攢鈹€ -> 优先级排序     鍋囪楠岃瘉浼樺厛绾?
+鈹?  鈹?      鈹斺攢鈹€ -> 访谈脚本     閽堝楂橀闄╁亣璁捐璁¤璋?
+鈹?  鈹?              鈹斺攢鈹€ -> 访谈总结   浠庤璋堟彁鐐兼礊瀵?
+鈹?  鈹?                      鈹斺攢鈹€ -> 识别假设 (寰幆: 鏂板亣璁?
+鈹?  鈹?
+鈹?  鈹斺攢鈹€ -> 优先级引擎   楂樹环鍊煎亣璁剧撼鍏ラ渶姹傛睜
+鈹?
+銆愪骇鍝佽鍒掗樁娈点€戔攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹?
+鈹?
+鈹溾攢鈹€ 竞品分析    鈫?鍏ュ彛锛氱珵浜夋牸灞€涓庡畾浣嶅垎鏋?
+鈹?  鈹溾攢鈹€ -> 策略画布        绔炰簤缁村害涓?ERRC 琛屽姩
+鈹?  鈹?      鈹斺攢鈹€ -> 价值主张     宸紓鍖栦环鍊间富寮?
+鈹?  鈹?
+鈹?  鈹斺攢鈹€ -> 识别假设         鍙戠幇鏂版満浼氬亣璁?
+鈹?
+鈹溾攢鈹€ 优先级引擎   鈫?鍏ュ彛锛氶渶姹傛睜浼樺厛绾ц瘎鍒?
+鈹?  鈹斺攢鈹€ -> 路线图规划          璺嚎鍥?+ 閲岀▼纰?
+鈹?          鈹斺攢鈹€ -> 用户故事地图       鐢ㄦ埛浠诲姟娴?/ MVP 鍒囩墖
+鈹?                  鈹溾攢鈹€ -> PRD编写            缂栧啓鍗曚釜 PRD
+鈹?                  鈹斺攢鈹€ -> 迭代规划    Sprint 浠诲姟鎷嗚В
+鈹?
+鈹斺攢鈹€ 价值主张       鈫?鐙珛锛氫骇鍝佸畾浣嶄笌鍗栫偣鎻愮偧
+    鈹斺攢鈹€ -> PRD编写
 
-【执行交付阶段】━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-│
-├── prd-writer             ← 核心：PRD 编写
-│   ├── -> pm-review-board        PRD 评审
-│   │       └── -> prd-writer (修改循环)
-│   │
-│   ├── -> pm-prototype-design   原型制作
-│   ├── -> tracking-spec-writer  埋点规范
-│   └── -> engineering-handoff   工程交接
-│           └── -> release-launch      发布流程
-│                   └── -> retrospective-review   上线复盘
-│                           ├── -> identify-needs
-│                           └── -> pm-roadmap-planner
-│
-├── pm-analytics           ← 数据驱动入口
-│   ├── -> pm-experiment-designer   A/B 实验设计
-│   │       └── -> pm-analytics (分析循环)
-│   │
-│   └── -> retrospective-review     结果复盘
-│
-└── tracking-spec-writer   ← 埋点入口
-    └── -> pm-analytics         数据分析依赖埋点规范
+銆愭墽琛屼氦浠橀樁娈点€戔攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹?
+鈹?
+鈹溾攢鈹€ PRD编写             鈫?鏍稿績锛歅RD 缂栧啓
+鈹?  鈹溾攢鈹€ -> 评审委员会        PRD 璇勫
+鈹?  鈹?      鈹斺攢鈹€ -> PRD编写 (淇敼寰幆)
+鈹?  鈹?
+鈹?  鈹溾攢鈹€ -> 原型制作   鍘熷瀷鍒朵綔
+鈹?  鈹溾攢鈹€ -> 埋点规范  鍩嬬偣瑙勮寖
+鈹?  鈹斺攢鈹€ -> 工程交接   宸ョ▼浜ゆ帴
+鈹?          鈹斺攢鈹€ -> 发布流程      鍙戝竷娴佺▼
+鈹?                  鈹斺攢鈹€ -> 复盘学习   涓婄嚎澶嶇洏
+鈹?                          鈹溾攢鈹€ -> 识别假设
+鈹?                          鈹斺攢鈹€ -> 路线图规划
+鈹?
+鈹溾攢鈹€ 数据分析           鈫?鏁版嵁椹卞姩鍏ュ彛
+鈹?  鈹溾攢鈹€ -> 实验设计   A/B 瀹為獙璁捐
+鈹?  鈹?      鈹斺攢鈹€ -> 数据分析 (鍒嗘瀽寰幆)
+鈹?  鈹?
+鈹?  鈹斺攢鈹€ -> 复盘学习     缁撴灉澶嶇洏
+鈹?
+鈹斺攢鈹€ 埋点规范   鈫?鍩嬬偣鍏ュ彛
+    鈹斺攢鈹€ -> 数据分析         鏁版嵁鍒嗘瀽渚濊禆鍩嬬偣瑙勮寖
 ```
 
 ---
 
-## 二、Commands（技能链）
+## 浜屻€丆ommands锛堟妧鑳介摼锛?
 
-### 1. /discover — 需求发现流程
-**链路**：identify-needs -> user-prioritization -> interview-script -> interview-summary
+### 1. /discover 鈥?闇€姹傚彂鐜版祦绋?
+**閾捐矾**锛歩dentify-needs -> 优先级排序 -> 访谈脚本 -> 访谈总结
 
-用户输入模糊想法 -> 结构化假设清单 -> 假设优先级 -> 访谈提纲 -> 洞察清单 + 新假设
+鐢ㄦ埛杈撳叆妯＄硦鎯虫硶 -> 缁撴瀯鍖栧亣璁炬竻鍗?-> 鍋囪浼樺厛绾?-> 璁胯皥鎻愮翰 -> 娲炲療娓呭崟 + 鏂板亣璁?
 
-支持 `full / stage / lite` 模式，以及 `ideation / prioritize / interview-prep / summarize` 子模式
-支持“问题型需求补充输入”，用于已有现象、数据和初步解法的优化类需求
+鏀寔 `full / stage / lite` 妯″紡锛屼互鍙?`ideation / prioritize / interview-prep / summarize` 瀛愭ā寮?
+鏀寔鈥滈棶棰樺瀷闇€姹傝ˉ鍏呰緭鍏モ€濓紝鐢ㄤ簬宸叉湁鐜拌薄銆佹暟鎹拰鍒濇瑙ｆ硶鐨勪紭鍖栫被闇€姹?
 
-**触发词**：`/discover [产品方向]`
-**示例**：`/discover 做一个 AI 写作助手`
-
----
-
-### 2. /competitive — 竞品分析流程
-**链路**：competitive-strategy -> strategy-canvas -> value-proposition
-
-用户输入竞品名单/市场 -> 竞争格局分析 -> 竞争维度曲线 + ERRC 行动 -> 差异化价值主张
-
-**触发词**：`/competitive [市场/竞品]`
-**示例**：`/competitive 在线文档工具市场`
+**瑙﹀彂璇?*锛歚/discover [浜у搧鏂瑰悜]`
+**绀轰緥**锛歚/discover 鍋氫竴涓?AI 鍐欎綔鍔╂墜`
 
 ---
 
-### 3. /plan — 产品规划流程
-**链路**：demand-prioritization-engine -> pm-roadmap-planner -> user-story-mapping -> iteration-planning
+### 2. /competitive 鈥?绔炲搧鍒嗘瀽娴佺▼
+**閾捐矾**锛歝ompetitive-strategy -> 策略画布 -> 价值主张
 
-用户输入需求池/季度目标 -> 多模型优先级评分 -> 路线图与里程碑 -> 用户任务流与 MVP 切片 -> Sprint 任务拆解
+鐢ㄦ埛杈撳叆绔炲搧鍚嶅崟/甯傚満 -> 绔炰簤鏍煎眬鍒嗘瀽 -> 绔炰簤缁村害鏇茬嚎 + ERRC 琛屽姩 -> 宸紓鍖栦环鍊间富寮?
 
-支持 `full / lite / delivery` 三种模式
-
-**触发词**：`/plan [季度目标]`
-**示例**：`/plan Q2 提升用户留存`
+**瑙﹀彂璇?*锛歚/competitive [甯傚満/绔炲搧]`
+**绀轰緥**锛歚/competitive 鍦ㄧ嚎鏂囨。宸ュ叿甯傚満`
 
 ---
 
-### 4. /write-prd — PRD 全流程
-**链路**：identify-needs -> prd-writer -> pm-review-board -> pm-prototype-design -> tracking-spec-writer -> pm-review-board
+### 3. /plan 鈥?浜у搧瑙勫垝娴佺▼
+**閾捐矾**锛歞emand-prioritization-engine -> 路线图规划 -> 用户故事地图 -> 迭代规划
 
-用户输入模糊需求 -> 完整 PRD 文档 -> 多角度评审 -> HTML 可交互原型 -> 埋点规范 -> 综合复评
+鐢ㄦ埛杈撳叆闇€姹傛睜/瀛ｅ害鐩爣 -> 澶氭ā鍨嬩紭鍏堢骇璇勫垎 -> 璺嚎鍥句笌閲岀▼纰?-> 鐢ㄦ埛浠诲姟娴佷笌 MVP 鍒囩墖 -> Sprint 浠诲姟鎷嗚В
 
-支持 `from-idea / from-discovery / from-story-map` 三种入口模式
-支持 `full / lite` 两种运行模式
-如果需求效果需要数据验证，推荐后续进入 `/analyze`
+鏀寔 `full / lite / delivery` 涓夌妯″紡
 
-**触发词**：`/write-prd [功能描述]`
-**示例**：`/write-prd 做一个用户分享功能`
+**瑙﹀彂璇?*锛歚/plan [瀛ｅ害鐩爣]`
+**绀轰緥**锛歚/plan Q2 鎻愬崌鐢ㄦ埛鐣欏瓨`
 
 ---
 
-### 5. /launch — 发布全流程
-**链路**：engineering-handoff -> release-launch -> retrospective-review
+### 4. /write-prd 鈥?PRD 鍏ㄦ祦绋?
+**閾捐矾**锛歩dentify-needs -> PRD编写 -> 评审委员会 -> 原型制作 -> 埋点规范 -> 评审委员会
 
-已确认交付范围 -> 工程交接包 -> 灰度策略 + 发布检查 + 回滚方案 -> 上线复盘 + 行动项
+鐢ㄦ埛杈撳叆妯＄硦闇€姹?-> 瀹屾暣 PRD 鏂囨。 -> 澶氳搴﹁瘎瀹?-> HTML 鍙氦浜掑師鍨?-> 鍩嬬偣瑙勮寖 -> 缁煎悎澶嶈瘎
 
-支持 `full / lite` 两种模式
+鏀寔 `from-idea / from-discovery / from-story-map` 涓夌鍏ュ彛妯″紡
+鏀寔 `full / lite` 涓ょ杩愯妯″紡
+濡傛灉闇€姹傛晥鏋滈渶瑕佹暟鎹獙璇侊紝鎺ㄨ崘鍚庣画杩涘叆 `/analyze`
 
-**触发词**：`/launch [版本号/功能名]`
-**示例**：`/launch v2.5.0`
-
----
-
-### 6. /analyze — 数据分析流程
-**链路**：pm-analytics -> pm-experiment-designer -> pm-analytics
-
-用户输入数据问题/上传数据 -> 数据体检 + 假设推断 -> A/B 测试方案 + 止损规则 -> 实验结果分析 + 行动建议
-
-**触发词**：`/analyze [指标问题]`
-**示例**：`/analyze DAU 最近一周下降了 15%`
+**瑙﹀彂璇?*锛歚/write-prd [鍔熻兘鎻忚堪]`
+**绀轰緥**锛歚/write-prd 鍋氫竴涓敤鎴峰垎浜姛鑳絗
 
 ---
 
-### 7. /interview — 访谈全流程
-**链路**：identify-needs -> interview-script -> interview-summary
+### 5. /launch 鈥?鍙戝竷鍏ㄦ祦绋?
+**閾捐矾**锛歟ngineering-handoff -> 发布流程 -> 复盘学习
 
-用户输入访谈目标 -> 明确关键假设 -> 结构化访谈提纲 -> 洞察提炼
+宸茬‘璁や氦浠樿寖鍥?-> 宸ョ▼浜ゆ帴鍖?-> 鐏板害绛栫暐 + 鍙戝竷妫€鏌?+ 鍥炴粴鏂规 -> 涓婄嚎澶嶇洏 + 琛屽姩椤?
 
-**子命令**：
-- `/interview prep [目标]` — 只准备访谈提纲
-- `/interview summarize [记录]` — 只总结访谈
+鏀寔 `full / lite` 涓ょ妯″紡
 
-**触发词**：`/interview [目标]`
-**示例**：`/interview 验证 AI 写作助手是否解决用户痛点`
+**瑙﹀彂璇?*锛歚/launch [鐗堟湰鍙?鍔熻兘鍚峕`
+**绀轰緥**锛歚/launch v2.5.0`
 
 ---
 
-### 8. /roadmap — 快速路线图
-**链路**：demand-prioritization-engine -> pm-roadmap-planner
+### 6. /analyze 鈥?鏁版嵁鍒嗘瀽娴佺▼
+**閾捐矾**锛歱m-analytics -> 实验设计 -> 数据分析
 
-用户输入需求/目标 -> 快速优先级评分 -> 路线图（简化版）
+鐢ㄦ埛杈撳叆鏁版嵁闂/涓婁紶鏁版嵁 -> 鏁版嵁浣撴 + 鍋囪鎺ㄦ柇 -> A/B 娴嬭瘯鏂规 + 姝㈡崯瑙勫垯 -> 瀹為獙缁撴灉鍒嗘瀽 + 琛屽姩寤鸿
 
-**触发词**：`/roadmap [目标]`
-**示例**：`/roadmap Q3 提升付费转化率`
-
----
-
-### 9. /tracking-spec — 埋点规范专项
-**链路**：tracking-spec-writer
-
-用户输入功能清单/业务指标 -> 事件设计 + 参数定义 + 上报时机 + 验收标准
-
-**触发词**：`/tracking-spec [功能/指标]`
-**示例**：`/tracking-spec 新注册流程转化漏斗`
+**瑙﹀彂璇?*锛歚/analyze [鎸囨爣闂]`
+**绀轰緥**锛歚/analyze DAU 鏈€杩戜竴鍛ㄤ笅闄嶄簡 15%`
 
 ---
 
-### 10. /story-map — 用户故事地图专项
-**链路**：user-story-mapping
+### 7. /interview 鈥?璁胯皥鍏ㄦ祦绋?
+**閾捐矾**锛歩dentify-needs -> 访谈脚本 -> 访谈总结
 
-用户输入路线图/Epic/目标用户任务 -> 用户任务流 -> 故事拆解 -> MVP 切片 -> PRD 候选清单
+鐢ㄦ埛杈撳叆璁胯皥鐩爣 -> 鏄庣‘鍏抽敭鍋囪 -> 缁撴瀯鍖栬璋堟彁绾?-> 娲炲療鎻愮偧
 
-**触发词**：`/story-map [Epic/目标]`
-**示例**：`/story-map 用户分享能力`
+**瀛愬懡浠?*锛?
+- `/interview prep [鐩爣]` 鈥?鍙噯澶囪璋堟彁绾?
+- `/interview summarize [璁板綍]` 鈥?鍙€荤粨璁胯皥
+
+**瑙﹀彂璇?*锛歚/interview [鐩爣]`
+**绀轰緥**锛歚/interview 楠岃瘉 AI 鍐欎綔鍔╂墜鏄惁瑙ｅ喅鐢ㄦ埛鐥涚偣`
 
 ---
 
-## 三、Skill × Command 映射表
+### 8. /roadmap 鈥?蹇€熻矾绾垮浘
+**閾捐矾**锛歞emand-prioritization-engine -> 路线图规划
 
-| Skill | 属于 Commands |
+鐢ㄦ埛杈撳叆闇€姹?鐩爣 -> 蹇€熶紭鍏堢骇璇勫垎 -> 璺嚎鍥撅紙绠€鍖栫増锛?
+
+**瑙﹀彂璇?*锛歚/roadmap [鐩爣]`
+**绀轰緥**锛歚/roadmap Q3 鎻愬崌浠樿垂杞寲鐜嘸
+
+---
+
+### 9. /tracking-spec 鈥?鍩嬬偣瑙勮寖涓撻」
+**閾捐矾**锛歵racking-spec-writer
+
+鐢ㄦ埛杈撳叆鍔熻兘娓呭崟/涓氬姟鎸囨爣 -> 浜嬩欢璁捐 + 鍙傛暟瀹氫箟 + 涓婃姤鏃舵満 + 楠屾敹鏍囧噯
+
+**瑙﹀彂璇?*锛歚/tracking-spec [鍔熻兘/鎸囨爣]`
+**绀轰緥**锛歚/tracking-spec 鏂版敞鍐屾祦绋嬭浆鍖栨紡鏂梎
+
+---
+
+### 10. /story-map 鈥?鐢ㄦ埛鏁呬簨鍦板浘涓撻」
+**閾捐矾**锛歶ser-story-mapping
+
+鐢ㄦ埛杈撳叆璺嚎鍥?Epic/鐩爣鐢ㄦ埛浠诲姟 -> 鐢ㄦ埛浠诲姟娴?-> 鏁呬簨鎷嗚В -> MVP 鍒囩墖 -> PRD 鍊欓€夋竻鍗?
+
+**瑙﹀彂璇?*锛歚/story-map [Epic/鐩爣]`
+**绀轰緥**锛歚/story-map 鐢ㄦ埛鍒嗕韩鑳藉姏`
+
+---
+
+## 涓夈€丼kill 脳 Command 鏄犲皠琛?
+
+| Skill | 灞炰簬 Commands |
 |-------|--------------|
-| identify-needs | discover, write-prd, interview |
-| user-prioritization | discover |
-| interview-script | discover, interview |
-| interview-summary | discover, interview |
-| competitive-strategy | competitive |
-| strategy-canvas | competitive |
-| value-proposition | competitive |
-| demand-prioritization-engine | plan, roadmap |
-| pm-roadmap-planner | plan, roadmap |
-| user-story-mapping | plan, story-map |
-| iteration-planning | plan |
-| prd-writer | write-prd |
-| pm-review-board | write-prd |
-| pm-prototype-design | write-prd |
-| tracking-spec-writer | write-prd, tracking-spec |
-| engineering-handoff | launch |
-| release-launch | launch |
-| retrospective-review | launch |
-| pm-analytics | analyze |
-| pm-experiment-designer | analyze |
+| 识别假设 | discover, write-prd, interview |
+| 优先级排序 | discover |
+| 访谈脚本 | discover, interview |
+| 访谈总结 | discover, interview |
+| 竞品分析 | competitive |
+| 策略画布 | competitive |
+| 价值主张 | competitive |
+| 优先级引擎 | plan, roadmap |
+| 路线图规划 | plan, roadmap |
+| 用户故事地图 | plan, story-map |
+| 迭代规划 | plan |
+| PRD编写 | write-prd |
+| 评审委员会 | write-prd |
+| 原型制作 | write-prd |
+| 埋点规范 | write-prd, tracking-spec |
+| 工程交接 | launch |
+| 发布流程 | launch |
+| 复盘学习 | launch |
+| 数据分析 | analyze |
+| 实验设计 | analyze |
