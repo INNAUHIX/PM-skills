@@ -376,6 +376,6 @@ Day 5: {{...}}
 ### Skill 地图位置
 ```
 执行交付
-  pm-roadmap-planner -> iteration-planning -> [Sprint 任务] -> 开发执行
-        <- retrospective-review (行动项反馈)
+  路线图规划 -> 迭代规划 -> [Sprint 任务] -> 开发执行
+    <- 复盘学习 (行动项反馈)
 ```

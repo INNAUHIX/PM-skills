@@ -298,12 +298,12 @@ triggers:
 | 需求发现/识别假设 | 竞品差距分析 | 从中发现产品机会假设 |
 
 ### 推荐的 Commands
-- `/competitive` 竞品分析流程：competitive-strategy -> strategy-canvas -> value-proposition
-- 单独使用：`/competitive-analysis [市场/竞品]`
+- `/competitive` 竞品分析流程：竞品简报 -> 策略画布 -> 价值主张
+- 单独使用：`/competitive [市场/竞品]`
 
 ### Skill 地图位置
 ```
-产品层（竞品分析链路）
-  competitive-strategy -> [差异化方向] -> strategy-canvas -> [竞争行动]
-                              -> value-proposition        -> identify-needs
+产品规划（竞品分析链路）
+  竞品简报 -> [差异化方向] -> 策略画布 -> [竞争行动]
+                      -> 价值主张  -> 识别假设
 ```

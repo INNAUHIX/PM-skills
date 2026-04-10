@@ -492,5 +492,5 @@ triggers:
 ### Skill 地图位置
 ```
 执行交付
-  pm-roadmap-planner -> [版本计划] -> release-launch -> [发布] -> retrospective-review
+  路线图规划 -> [版本计划] -> 发布流程 -> [发布] -> 复盘学习
 ```

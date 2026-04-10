@@ -1,5 +1,5 @@
 ---
-name: pm-prototype-design
+name: 原型制作
 description: |
   将 PRD 或需求描述转换为可交互的 HTML 页面原型。当用户说生成原型、把 PRD 变成原型、设计交互原型时触发此 Skill。
 triggers:
@@ -36,7 +36,7 @@ PRD 写完了，开发还没开始，PM 和设计师需要**提前验证方案�
 ❌ **不适用**：高保真设计稿（交给 UI 设计师）
 ❌ **不适用**：复杂交互动画（拖拽、Canvas 游戏等，需专业工具）
 
-# pm-prototype-design：PRD 转可交互 HTML 原型
+# 原型制作：PRD 转可交互 HTML 原型
 
 ## 你的角色
 

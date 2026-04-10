@@ -307,7 +307,7 @@ triggers:
 
 ### Skill 地图位置
 ```
-产品层
-  competitive-strategy -> strategy-canvas -> [ERRC 行动] -> value-proposition
-                                              -> identify-needs (新假设)
+产品规划
+  竞品简报 -> 策略画布 -> [ERRC 行动] -> 价值主张
+                                -> 识别假设 (新假设)
 ```

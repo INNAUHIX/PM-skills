@@ -1,5 +1,5 @@
 ---
-name: interview-script
+name: 访谈脚本
 description: |
   为特定目标用户设计结构化访谈提纲。当用户说帮我写个访谈提纲、准备一下用户访谈问题时使用此 Skill。也适用于用户要开展用户调研但不知道问什么时。
 triggers:
@@ -304,5 +304,5 @@ AI 自动生成：
 ### Skill 地图位置
 ```
 需求发现阶段
-  identify-needs -> user-prioritization -> interview-script -> [脚本] -> interview-summary
+  识别假设 -> 优先级排序 -> 访谈脚本 -> [脚本] -> 访谈总结
 ```

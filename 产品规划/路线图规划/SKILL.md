@@ -1,5 +1,5 @@
 ---
-name: pm-roadmap-planner
+name: 路线图规划
 description: |
   从季度目标、团队产能、依赖方信息出发，输出可执行的版本路线图。当用户提到路线图、版本规划、roadmap、里程碑、季度计划时使用此 Skill。
 triggers:
@@ -37,7 +37,7 @@ triggers:
 ❌ **不适用**：每日/每周的 Sprint 任务分配（用 执行交付/迭代规划）
 ❌ **不适用**：项目管理甘特图（用专项项目管理工具）
 
-# pm-roadmap-planner：产品路线图规划器
+# 路线图规划：产品路线图规划器
 
 ## 你的角色
 

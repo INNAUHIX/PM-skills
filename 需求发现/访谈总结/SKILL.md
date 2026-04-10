@@ -1,5 +1,5 @@
 ---
-name: interview-summary
+name: 访谈总结
 description: |
   结构化总结用户访谈，提取关键洞察。当用户说帮我总结一下访谈、从访谈里提取洞察、整理访谈记录时使用此 Skill。也适用于用户有多份访谈记录需要汇总时。
 triggers:
@@ -299,6 +299,6 @@ AI 自动输出：
 ### Skill 地图位置
 ```
 需求发现阶段
-  interview-script -> [访谈记录] -> interview-summary -> [洞察清单]
-                                                -> identify-needs (新假设)
+  访谈脚本 -> [访谈记录] -> 访谈总结 -> [洞察清单]
+                                    -> 识别假设 (新假设)
 ```

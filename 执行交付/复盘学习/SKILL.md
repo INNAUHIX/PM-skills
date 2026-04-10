@@ -432,9 +432,9 @@ triggers:
 ### 下游 Skill（输出去向）
 | Skill | 接收内容 | 如何配合 |
 |-------|---------|---------|
-| 「iteration-planning」 | 行动项 + 经验教训 | 纳入下一轮 Sprint 规划 |
-| 「pm-roadmap-planner」 | 路线图调整建议 | 据此更新路线图 |
-| 「identify-needs」 | 新发现的产品假设 | 纳入下一轮需求发现 |
+| 执行交付/迭代规划 | 行动项 + 经验教训 | 纳入下一轮 Sprint 规划 |
+| 产品规划/路线图规划 | 路线图调整建议 | 据此更新路线图 |
+| 需求发现/识别假设 | 新发现的产品假设 | 纳入下一轮需求发现 |
 
 ### 推荐的 Commands
 - `/launch` 发布流程的最后一环
@@ -443,8 +443,8 @@ triggers:
 ### Skill 地图位置
 ```
 执行交付
-  release-launch -> retrospective-review -> [行动项]
-                                              -> iteration-planning
-                                              -> pm-roadmap-planner
-                                              -> identify-needs (新假设)
+  发布流程 -> 复盘学习 -> [行动项]
+                     -> 迭代规划
+                     -> 路线图规划
+                     -> 识别假设 (新假设)
 ```

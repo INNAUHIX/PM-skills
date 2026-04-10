@@ -1,5 +1,5 @@
 ---
-name: pm-experiment-designer
+name: 实验设计
 description: |
   设计严谨的 A/B 测试方案，包含实验假设、分流方案、样本量计算、止损规则。当用户说设计个A/B测试、帮我设计个实验、算一下需要多少样本时触发此 Skill。
 triggers:
@@ -37,7 +37,7 @@ triggers:
 ❌ **不适用**：定性用户测试（用 需求发现/访谈脚本）
 ❌ **不适用**：统计分析工具使用（直接用 Python/R/SQL）
 
-# pm-experiment-designer：A/B 实验设计器
+# 实验设计：A/B 实验设计器
 
 ## 你的角色
 

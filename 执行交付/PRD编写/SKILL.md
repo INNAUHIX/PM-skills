@@ -1,5 +1,5 @@
 ---
-name: prd-writer
+name: PRD编写
 description: |
   把模糊需求转化为可评审的PRD文档。当用户说写个需求文档、帮我出PRD、这个功能怎么写需求、帮我补全PRD时触发此 Skill。
 triggers:
@@ -334,27 +334,27 @@ PRD主体写完后，做一轮自动补全。
 ### 上游 Skill（输入来源）
 | Skill | 输出内容 | 如何配合 |
 |-------|---------|---------|
-| 「identify-needs」 | 产品假设 + 需求描述 | 直接转化为 PRD 结构 |
-| 「demand-prioritization-engine」 | 高优先级需求 | 确定 PRD 范围 |
-| 「pm-review-board」 | 评审反馈 | 根据反馈修改 PRD |
+| 需求发现/识别假设 | 产品假设 + 需求描述 | 直接转化为 PRD 结构 |
+| 产品规划/优先级引擎 | 高优先级需求 | 确定 PRD 范围 |
+| 执行交付/评审委员会 | 评审反馈 | 根据反馈修改 PRD |
 
 ### 下游 Skill（输出去向）
 | Skill | 接收内容 | 如何配合 |
 |-------|---------|---------|
-| 「pm-review-board」 | PRD 初稿 | 进行多角度评审 |
-| 「pm-prototype-design」 | PRD | 转化为可交互原型 |
-| 「tracking-spec-writer」 | PRD 功能清单 | 补充数据埋点需求 |
-| 「engineering-handoff」 | PRD | 作为开发交接的核心文档 |
+| 执行交付/评审委员会 | PRD 初稿 | 进行多角度评审 |
+| 执行交付/原型制作 | PRD | 转化为可交互原型 |
+| 执行交付/埋点规范 | PRD 功能清单 | 补充数据埋点需求 |
+| 执行交付/工程交接 | PRD | 作为开发交接的核心文档 |
 
 ### 推荐的 Commands
-- `/write-prd` 全流程：prd-writer -> pm-review-board -> pm-prototype-design -> pm-review-board
-- 单独使用：`/prd [功能描述]`
+- `/write-prd` 全流程：PRD编写 -> 评审委员会 -> 原型制作 -> 评审委员会
+- 单独使用：`/write-prd [功能描述]`
 
 ### Skill 地图位置
 ```
 执行交付（PRD 链路）
-  identify-needs -> prd-writer -> [PRD] -> pm-review-board
-                                       -> pm-prototype-design -> pm-review-board
-                                       -> tracking-spec-writer -> pm-analytics
-                                       -> engineering-handoff -> release-launch
+  识别假设 -> PRD编写 -> 评审委员会
+                    -> 原型制作 -> 评审委员会
+                    -> 埋点规范 -> 数据分析
+                    -> 工程交接 -> 发布流程
 ```

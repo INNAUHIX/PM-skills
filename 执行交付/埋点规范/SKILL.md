@@ -309,6 +309,6 @@ triggers:
 ### Skill 地图位置
 ```
 执行交付
-  prd-writer -> tracking-spec-writer -> [埋点规范] -> pm-analytics
-                                                                      -> pm-experiment-designer
+  PRD编写 -> 埋点规范 -> [埋点规范] -> 数据分析
+                                           -> 实验设计
 ```

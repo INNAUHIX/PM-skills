@@ -286,5 +286,5 @@ triggers:
 ### Skill 地图位置
 ```
 执行交付
-  prd-writer -> pm-review-board -> engineering-handoff -> [交接包] -> release-launch
+  PRD编写 -> 评审委员会 -> 工程交接 -> [交接包] -> 发布流程
 ```

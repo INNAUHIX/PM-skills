@@ -1,5 +1,5 @@
 ---
-name: demand-prioritization-engine
+name: 优先级引擎
 description: |
   对需求、功能、项目进行多维度优先级排序，输出版本排期建议。当用户说帮我排优先级、用RICE打分、用ICE评分、用Kano分析时使用此 Skill。
 triggers:
@@ -38,7 +38,7 @@ triggers:
 ❌ **不适用**：探索期的假设验证排序（用 需求发现/优先级排序）
 ❌ **不适用**：单个需求的深入分析（用 执行交付/PRD编写）
 
-# pm-prioritization-engine：多模型需求优先级引擎
+# 优先级引擎：多模型需求优先级引擎
 
 ## 你的角色
 

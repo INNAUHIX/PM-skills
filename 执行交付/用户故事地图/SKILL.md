@@ -259,6 +259,6 @@ triggers:
 ### Skill 地图位置
 ```
 产品规划 / 执行交付
-  pm-roadmap-planner -> user-story-mapping -> prd-writer
-                                          -> iteration-planning
+  路线图规划 -> 用户故事地图 -> PRD编写
+                               -> 迭代规划
 ```
