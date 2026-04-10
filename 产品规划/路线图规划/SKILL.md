@@ -28,7 +28,7 @@ triggers:
 - **来源**：Teresa Torres持续发现习惯 + Marty Cagan《INSPIRED》
 - **核心逻辑**：目标→能力拆解→里程碑编排→风险缓冲，每步都要有可验证的交付物
 - **与其他 Skill 的关系**：
-  - 产品规划/优先级引擎 输出需求优先级 → 本 Skill 据此安排版本
+  - 产品规划/需求优先级 输出需求优先级 → 本 Skill 据此安排版本
   - 本 Skill 输出的 Epic/Feature 列表 → 执行交付/迭代规划 拆解为 Sprint 任务
 
 ### 适用边界
