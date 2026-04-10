@@ -26,13 +26,13 @@ triggers:
 - **来源**：Mike Cohn《敏捷估计与规划》+ Scrum Guide
 - **核心原则**：估算要透明，每个任务的完成标准要清晰，依赖关系要明确
 - **与其他 Skill 的关系**：
-  - 「pm-roadmap-planner」Skill 输出 Epic 列表 → 本 Skill 拆解为 Sprint 任务
+  - 产品规划/路线图规划 输出 Epic 列表 → 本 Skill 拆解为 Sprint 任务
   - 本 Skill 输出的 Sprint 计划 → 驱动团队日常开发执行
 
 ### 适用边界
 
 ✅ **适用**：Epic 到 Sprint 的任务拆解；Sprint Planning 会议准备
-❌ **不适用**：季度/半年路线图（用「pm-roadmap-planner」）
+❌ **不适用**：季度/半年路线图（用 产品规划/路线图规划）
 ❌ **不适用**：日常任务分配（用 Jira/Trello 等工具）
 
 # 迭代规划：从版本目标到 Sprint 节奏
@@ -349,7 +349,7 @@ Day 5: {{...}}
 - 🚨 团队产能不明确
 
 **不触发本 Skill：**
-- ⛔ 季度/半年路线图（用「pm-roadmap-planner」）
+- ⛔ 季度/半年路线图（用 产品规划/路线图规划）
 
 ### 🆘 兜底策略
 
@@ -361,8 +361,8 @@ Day 5: {{...}}
 ### 上游 Skill（输入来源）
 | Skill | 输出内容 | 如何配合 |
 |-------|---------|---------|
-| 「pm-roadmap-planner」 | Epic / Feature 列表 | 直接拆解为 Sprint 任务 |
-| 「retrospective-review」 | 行动项 + 经验教训 | 纳入 Sprint 规划考虑 |
+| 产品规划/路线图规划 | Epic / Feature 列表 | 直接拆解为 Sprint 任务 |
+| 执行交付/复盘学习 | 行动项 + 经验教训 | 纳入 Sprint 规划考虑 |
 
 ### 下游 Skill（输出去向）
 | Skill | 接收内容 | 如何配合 |

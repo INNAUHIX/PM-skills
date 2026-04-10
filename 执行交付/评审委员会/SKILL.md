@@ -29,8 +29,8 @@ PRD 评审时只有 PM 参与，**设计、技术、运营的角度全被忽略*
 - **来源**：Marty Cagan《INSPIRED》产品发现方法 + Amazon PR/FAQ 评审机制
 - **核心原则**：评审是为了找问题，不是为了通过；每个问题都要有明确的修复/不修复/需讨论结论
 - **与其他 Skill 的关系**：
-  - 「prd-writer」Skill 输出 PRD → 本 Skill 进行评审
-  - 「pm-prototype-design」Skill 输出原型 → 本 Skill 也可评审原型
+  - 执行交付/PRD编写 输出 PRD → 本 Skill 进行评审
+  - 执行交付/原型制作 输出原型 → 本 Skill 也可评审原型
 
 ### 适用边界
 

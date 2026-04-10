@@ -27,8 +27,8 @@ triggers:
 - **来源**：Alexander Osterwalder《Value Proposition Design》+ Tony Ulwick《What Customers Want》
 - **关键原则**：价值主张必须回答"用户为什么选我们而不选竞品/现状"
 - **与其他 Skill 的关系**：
-  - 「competitive-strategy」Skill 输出差异化方向 → 本 Skill 据此提炼差异化主张
-  - 「identify-needs」Skill 输出核心假设 → 本 Skill 验证价值主张是否对用户真正重要
+  - 产品规划/竞品简报 输出差异化方向 → 本 Skill 据此提炼差异化主张
+  - 需求发现/识别假设 输出核心假设 → 本 Skill 验证价值主张是否对用户真正重要
 
 ### 适用边界
 

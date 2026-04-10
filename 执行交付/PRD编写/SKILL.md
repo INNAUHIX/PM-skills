@@ -28,8 +28,8 @@ triggers:
 - **来源**：Marty Cagan《INSPIRED》PRD模板 + David Bosch《The Product Owner》
 - **核心原则**：PRD 是团队协作的工具，不是文学创作；宁可多问一句，不漏一个边界条件
 - **与其他 Skill 的关系**：
-  - 「identify-needs」Skill 输出假设清单 → 本 Skill 将假设转化为产品需求
-  - 本 Skill 输出的 PRD → 「pm-review-board」Skill 进行评审
+  - 需求发现/识别假设 输出假设清单 → 本 Skill 将假设转化为产品需求
+  - 本 Skill 输出的 PRD → 执行交付/评审委员会 进行评审
 
 ### 适用边界
 

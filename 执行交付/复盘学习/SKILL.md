@@ -28,8 +28,8 @@ triggers:
 - **来源**：Gene Mobley《Retrospective Handbook》+ Agile 迭代回顾方法
 - **核心原则**：复盘不是流水账，每个结论必须有数据支撑，每条行动必须有 Owner 和截止日期
 - **与其他 Skill 的关系**：
-  - 「release-launch」Skill 输出发布数据 → 本 Skill 的复盘输入
-  - 本 Skill 输出的行动项 → 驱动下一轮「iteration-planning」Skill
+  - 执行交付/发布流程 输出发布数据 → 本 Skill 的复盘输入
+  - 本 Skill 输出的行动项 → 驱动下一轮 执行交付/迭代规划
 
 ### 适用边界
 

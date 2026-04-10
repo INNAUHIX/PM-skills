@@ -27,9 +27,9 @@ triggers:
 - **来源**：Jeff Patton《User Story Mapping》+ Lean MVP 切片方法
 - **核心原则**：先按用户任务流组织，再做版本切片；MVP 不是最少功能，而是最小可验证价值
 - **与其他 Skill 的关系**：
-  - 「pm-roadmap-planner」Skill 输出 Epic/版本目标 → 本 Skill 负责拆成故事地图
-  - 本 Skill 输出的 MVP 切片 → 「prd-writer」Skill 可据此编写单个 PRD
-  - 本 Skill 输出的故事列表 → 「iteration-planning」Skill 可继续排 Sprint
+  - 产品规划/路线图规划 输出 Epic/版本目标 → 本 Skill 负责拆成故事地图
+  - 本 Skill 输出的 MVP 切片 → 执行交付/PRD编写 可据此编写单个 PRD
+  - 本 Skill 输出的故事列表 → 执行交付/迭代规划 可继续排 Sprint
 
 ### 适用边界
 
@@ -242,15 +242,15 @@ triggers:
 ### 上游 Skill（输入来源）
 | Skill | 输出内容 | 如何配合 |
 |-------|---------|---------|
-| 「pm-roadmap-planner」 | Epic / 版本目标 | 拆成用户任务流和版本切片 |
-| 「competitive-strategy」 | 差异化方向 | 识别哪些故事应优先进入 MVP |
+| 产品规划/路线图规划 | Epic / 版本目标 | 拆成用户任务流和版本切片 |
+| 产品规划/竞品简报 | 差异化方向 | 识别哪些故事应优先进入 MVP |
 | 用户直接提供 | Epic / 场景描述 | 直接构建故事地图 |
 
 ### 下游 Skill（输出去向）
 | Skill | 接收内容 | 如何配合 |
 |-------|---------|---------|
-| 「prd-writer」 | MVP 故事 / 关键流程 | 继续编写 PRD |
-| 「iteration-planning」 | 故事清单 / 版本分层 | 继续排 Sprint |
+| 执行交付/PRD编写 | MVP 故事 / 关键流程 | 继续编写 PRD |
+| 执行交付/迭代规划 | 故事清单 / 版本分层 | 继续排 Sprint |
 
 ### 推荐的 Commands
 - `/story-map [Epic]`

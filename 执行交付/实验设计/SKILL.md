@@ -28,13 +28,13 @@ triggers:
 - **来源**：Ron Kohavi《Trustworthy Online Controlled Experiments》+ Microsoft Experimentation Platform
 - **核心原则**：不在实验开始前定好判定规则，就等于在开奖后改规则
 - **与其他 Skill 的关系**：
-  - 本 Skill 输出的实验方案 → 「pm-analytics」Skill 分析实验数据
-  - 本 Skill 输出的止损规则 → 「release-launch」Skill 的回滚触发依据
+  - 本 Skill 输出的实验方案 → 执行交付/数据分析 分析实验数据
+  - 本 Skill 输出的止损规则 → 执行交付/发布流程 的回滚触发依据
 
 ### 适用边界
 
 ✅ **适用**：A/B 测试方案设计；样本量计算；实验判定规则制定
-❌ **不适用**：定性用户测试（用「interview-script」）
+❌ **不适用**：定性用户测试（用 需求发现/访谈脚本）
 ❌ **不适用**：统计分析工具使用（直接用 Python/R/SQL）
 
 # pm-experiment-designer：A/B 实验设计器
@@ -407,7 +407,7 @@ MDE = 基线值 × 相对变化幅度
 - 🚨 用户无法描述实验组和对照组的区别
 
 **不触发本 Skill：**
-- ⛔ 定性用户测试（用「interview-script」）
+- ⛔ 定性用户测试（用 需求发现/访谈脚本）
 
 ### 🆘 兜底策略
 
@@ -432,15 +432,15 @@ MDE = 基线值 × 相对变化幅度
 ### 上游 Skill（输入来源）
 | Skill | 输出内容 | 如何配合 |
 |-------|---------|---------|
-| 「pm-analytics」 | 数据分析后的假设推断 | 据此设计验证实验 |
-| 「identify-needs」 | 待验证的高风险假设 | 直接设计 A/B 测试验证 |
+| 执行交付/数据分析 | 数据分析后的假设推断 | 据此设计验证实验 |
+| 需求发现/识别假设 | 待验证的高风险假设 | 直接设计 A/B 测试验证 |
 | 用户直接提供 | 实验想法 | 直接设计实验方案 |
 
 ### 下游 Skill（输出去向）
 | Skill | 接收内容 | 如何配合 |
 |-------|---------|---------|
-| 「pm-analytics」 | 实验数据 | 分析 A/B 测试结果 |
-| 「release-launch」 | 止损规则 + 回滚触发条件 | 作为发布的监控指标 |
+| 执行交付/数据分析 | 实验数据 | 分析 A/B 测试结果 |
+| 执行交付/发布流程 | 止损规则 + 回滚触发条件 | 作为发布的监控指标 |
 
 ### 推荐的 Commands
 - `/analyze` 数据分析流程：pm-analytics -> pm-experiment-designer -> pm-analytics

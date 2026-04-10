@@ -28,8 +28,8 @@ triggers:
 - **来源**：Google HEART指标体系 + Teresa Torres持续发现框架 + Lean Analytics
 - **核心原则**：数据不说谎，但不完整的数据会误导——先体检，再分析，最后给建议
 - **与其他 Skill 的关系**：
-  - 「tracking-spec-writer」Skill 输出埋点方案 → 本 Skill 的数据来源
-  - 本 Skill 输出的假设和行动建议 → 「pm-experiment-designer」Skill 设计验证实验
+  - 执行交付/埋点规范 输出埋点方案 → 本 Skill 的数据来源
+  - 本 Skill 输出的假设和行动建议 → 执行交付/实验设计 设计验证实验
 
 ### 适用边界
 
@@ -572,16 +572,16 @@ MDE（相对提升）    基准转化率 1%    基准转化率 5%    基准转�
 ### 上游 Skill（输入来源）
 | Skill | 输出内容 | 如何配合 |
 |-------|---------|---------|
-| 「tracking-spec-writer」 | 埋点规范 | 作为数据分析的数据来源 |
+| 执行交付/埋点规范 | 埋点规范 | 作为数据分析的数据来源 |
 | 用户直接提供 | CSV/Excel 数据 / SQL 结果 | 直接开始分析 |
-| 「release-launch」 | 发布后监控数据 | 分析发布后的数据表现 |
+| 执行交付/发布流程 | 发布后监控数据 | 分析发布后的数据表现 |
 
 ### 下游 Skill（输出去向）
 | Skill | 接收内容 | 如何配合 |
 |-------|---------|---------|
-| 「pm-experiment-designer」 | 数据洞察 + 假设推断 | 据此设计验证实验 |
-| 「identify-needs」 | 数据驱动的洞察 | 生成新的产品假设 |
-| 「retrospective-review」 | 上线后的数据分析 | 作为复盘的数据输入 |
+| 执行交付/实验设计 | 数据洞察 + 假设推断 | 据此设计验证实验 |
+| 需求发现/识别假设 | 数据驱动的洞察 | 生成新的产品假设 |
+| 执行交付/复盘学习 | 上线后的数据分析 | 作为复盘的数据输入 |
 
 ### 推荐的 Commands
 - `/analyze` 数据分析流程：pm-analytics -> pm-experiment-designer -> pm-analytics

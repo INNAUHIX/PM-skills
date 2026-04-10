@@ -29,8 +29,8 @@ triggers:
 - **来源**：Jez Humble《持续交付》+ Nicole Forsgren《Accelerate》
 - **核心原则**：发布是开始，不是结束；灰度优于全量，回滚先于修复
 - **与其他 Skill 的关系**：
-  - 「pm-roadmap-planner」Skill 输出版本计划 → 本 Skill 负责发布执行
-  - 本 Skill 输出的发布检查清单 → 「retrospective-review」Skill 的输入之一
+  - 产品规划/路线图规划 输出版本计划 → 本 Skill 负责发布执行
+  - 本 Skill 输出的发布检查清单 → 执行交付/复盘学习 的输入之一
 
 ### 适用边界
 
@@ -476,17 +476,17 @@ triggers:
 ### 上游 Skill（输入来源）
 | Skill | 输出内容 | 如何配合 |
 |-------|---------|---------|
-| 「pm-roadmap-planner」 | 版本发布计划 | 据此制定发布节奏 |
-| 「engineering-handoff」 | 上线计划 + 回归测试 | 直接进入发布检查 |
+| 产品规划/路线图规划 | 版本发布计划 | 据此制定发布节奏 |
+| 执行交付/工程交接 | 上线计划 + 回归测试 | 直接进入发布检查 |
 | 用户直接提供 | 功能清单 / 上线时间 | 直接制定发布计划 |
 
 ### 下游 Skill（输出去向）
 | Skill | 接收内容 | 如何配合 |
 |-------|---------|---------|
-| 「retrospective-review」 | 发布数据 + 问题清单 | 作为复盘输入 |
+| 执行交付/复盘学习 | 发布数据 + 问题清单 | 作为复盘输入 |
 
 ### 推荐的 Commands
-- `/launch` 发布流程：engineering-handoff -> release-launch -> retrospective-review
+- `/launch` 发布流程：工程交接 -> 发布流程 -> 复盘学习
 - 单独使用：`/release [版本内容]`
 
 ### Skill 地图位置
