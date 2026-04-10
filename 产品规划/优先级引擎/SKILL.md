@@ -422,7 +422,6 @@ triggers:
 
 ### Skill 地图位置
 ```
-产品层
-  identify-needs -> demand-prioritization-engine -> [优先级] -> pm-roadmap-planner
-                                                                          -> iteration-planning
+需求发现 → 优先级引擎 → 路线图规划 → 迭代规划
+        (多模型评分)    (里程碑)      (Sprint)
 ```
