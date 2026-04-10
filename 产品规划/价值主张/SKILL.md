@@ -1,5 +1,5 @@
 ---
-name: value-proposition
+name: 价值主张
 description: |
   设计产品的核心价值主张和关键信息。当用户说提炼价值主张，写产品卖点、设计核心信息、价值主张、产品定位、一句话介绍产品时使用此 Skill。
 triggers:

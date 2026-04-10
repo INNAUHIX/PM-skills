@@ -1,5 +1,5 @@
 ---
-name: competitive-strategy
+name: 竞品简报
 description: |
   规划产品线矩阵、分析竞品定位、识别差异化机会。当用户说竞品分析、竞品对比、产品线规划、竞争策略、差异化定位时使用此 Skill。
 triggers:

@@ -1,5 +1,5 @@
 ---
-name: tracking-spec-writer
+name: 埋点规范
 description: |
   编写数据埋点规范文档，包括事件设计、参数定义、上报时机。当用户说设计埋点，写埋点文档、数据采集规范时使用此 Skill。
 triggers:

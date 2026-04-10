@@ -1,5 +1,5 @@
 ---
-name: engineering-handoff
+name: 工程交接
 description: |
   将 PRD 转成研发可执行的交接包，包括范围确认、依赖梳理、接口文档和协作清单。当用户说工程交接、开发交底、技术交接时使用此 Skill。
 triggers:

@@ -1,5 +1,5 @@
 ---
-name: strategy-canvas
+name: 策略画布
 description: |
   使用九宫格战略画布分析产品定位，识别竞争优势与机会缺口。当用户说战略画布、九宫格分析、竞争优势分析、战略定位时使用此 Skill。
 triggers:

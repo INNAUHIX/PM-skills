@@ -1,5 +1,5 @@
 ---
-name: user-story-mapping
+name: 用户故事地图
 description: |
   将路线图中的 Epic/Feature 拆解为用户任务流、用户故事和 MVP 切片。当用户说用户故事地图、story map、MVP 怎么切、任务流拆解时使用此 Skill。
 triggers:

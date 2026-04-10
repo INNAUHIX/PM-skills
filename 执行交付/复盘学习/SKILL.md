@@ -1,5 +1,5 @@
 ---
-name: retrospective-review
+name: 复盘学习
 description: |
   生成结构化的上线复盘报告，包含目标达成、偏差原因、经验沉淀和后续行动项。当用户说写复盘、上线复盘、迭代总结时触发此 Skill。
 triggers:

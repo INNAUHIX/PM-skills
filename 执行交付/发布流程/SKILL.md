@@ -1,5 +1,5 @@
 ---
-name: release-launch
+name: 发布流程
 description: |
   制定完整的版本发布计划，包括灰度策略、回归测试、发布检查清单、回滚方案和发布后监控。当用户说制定发布计划、准备上线、发布流程时触发此 Skill。
 triggers:
