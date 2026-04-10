@@ -25,7 +25,7 @@ triggers:
 - **来源**：Jonah Gorlin《Validating Product Ideas》+ Jeff Gothelf《Sense and Respond》
 - **关键原则**：每个洞察必须有原始记录支撑，不能靠揣测
 - **与其他 Skill 的关系**：
-  - 需求发现/访谈脚本 负责设计访谈问题 → 输出访谈记录
+  - 需求发现/访谈提纲 负责设计访谈问题 → 输出访谈记录
   - 本 Skill 负责从记录中提炼洞察 → 输出洞察清单
   - 洞察清单 → 输入到 需求发现/识别假设 转化为产品假设
 
