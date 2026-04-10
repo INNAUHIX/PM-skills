@@ -48,12 +48,39 @@ PM-skills/
 
 ## 使用方法
 
+### OpenClaw / QClaw
+
 将技能包复制到 `~/.qclaw/skills/` 目录下即可使用。
 
 ```powershell
 # 复制所有 skills
 Copy-Item -Path "需求发现","产品规划","执行交付" -Destination "$HOME\.qclaw\skills\" -Recurse
 ```
+
+### Claude Desktop / Claude Code
+
+将技能包复制到 `~/.claude/skills/` 目录下即可使用。
+
+```powershell
+# 复制所有 skills
+Copy-Item -Path "需求发现","产品规划","执行交付" -Destination "$HOME\.claude\skills\" -Recurse
+```
+
+### Coze
+
+1. 打开 [Coze](https://www.coze.com)
+2. 创建或进入一个 Bot
+3. 进入"技能"页面
+4. 点击"添加技能"，选择"导入技能"
+5. 将本仓库的每个 Skill 目录（包含 SKILL.md）逐个导入
+
+### Cursor
+
+1. 打开 Cursor 设置
+2. 进入"Skills"或"GPTs"页面
+3. 点击"Add Skill"
+4. 选择"Import from folder"
+5. 选择对应的 Skill 目录（包含 SKILL.md）
 
 ---
 
